@@ -67,6 +67,7 @@
     form.addEventListener('submit', (e)=>{
       e.preventDefault()
       qrCode = new QRCodeStyling({
+        errorCorrectionLevel:"H",
         width: 300,
         height: 300,
         type: "svg",
@@ -98,7 +99,7 @@
       const currentYear = new Date().getFullYear();
       let num = Math.floor(Math.random()*99999) + 1
       console.log(num)
-      qrCode.download({name:"QRHIS-"+num+currentYear, extension:"png"})
+      qrCode.download({name:"QRKSB-"+num+currentYear, extension:"svg"})
     })
     setInterval(()=>{
       const svg = document.querySelector('svg')
@@ -107,3 +108,4 @@
 </script>
 </body>
 </html>
+
