@@ -99,7 +99,7 @@
       const currentYear = new Date().getFullYear();
       let num = Math.floor(Math.random()*99999) + 1
       console.log(num)
-      qrCode.download({name:"QRKSB-"+num+currentYear, extension:"svg"})
+      qrCode.download({name:"QRKSB-"+num+currentYear, extension:"png"})
     })
     setInterval(()=>{
       const svg = document.querySelector('svg')
@@ -108,4 +108,5 @@
 </script>
 </body>
 </html>
+
 
