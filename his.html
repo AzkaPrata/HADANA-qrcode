@@ -97,6 +97,10 @@
       const currentYear = new Date().getFullYear();
       let num = Math.floor(Math.random()*99999) + 1
       console.log(num)
+      qrCode.update({
+        width: 2000,
+        height: 2000
+      })
       qrCode.download({name:"QRHIS-"+num+currentYear, extension:"png"})
     })
     setInterval(()=>{
@@ -106,4 +110,5 @@
 </script>
 </body>
 </html>
+
 
