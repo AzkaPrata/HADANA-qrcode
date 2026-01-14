@@ -106,9 +106,13 @@
     setInterval(()=>{
       const svg = document.querySelector('svg')
       svg.classList.add("mx-auto")
-    }, 1000)
+      qrCode.update({
+        width: 300,
+        height: 300})
+    }, 500)
 </script>
 </body>
 </html>
+
 
 
